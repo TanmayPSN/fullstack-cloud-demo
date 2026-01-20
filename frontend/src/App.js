@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("Loading...");
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/hello")
+    fetch("https://potential-rotary-phone-6xr5r4x97xg3grj-8080.app.github.dev/api/hello")
       .then(res => res.text())
       .then(data => setMessage(data))
       .catch(() => setMessage("Backend not reachable"));
